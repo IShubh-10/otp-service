@@ -20,11 +20,12 @@ const OTP_EXPIRY_MS = 5 * 60 * 1000;
 const RESEND_COOLDOWN_MS = 30 * 1000;
 const MAX_ATTEMPTS = 5;
 
-const cors = require("cors");
-
 app.use(cors({
     origin: [
+         "https://ishubh-10.github.io",
         "http://127.0.0.1:5501",
+        "http://localhost:5501",
+        "http://127.0.0.1:5500",
         "http://localhost:5500"
     ],
     methods: ["GET", "POST", "OPTIONS"],
