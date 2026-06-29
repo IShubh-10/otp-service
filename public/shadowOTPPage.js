@@ -1,6 +1,6 @@
 (function () {
 
-    const API = "http://localhost:5000";
+    const API = "https://web-otp-service.onrender.com";
 
     // Create host element
     const host = document.createElement("div");

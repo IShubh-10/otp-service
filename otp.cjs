@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
+const cors = require("cors");
 
 const mysql = require("mysql2/promise");
 const crypto = require("crypto");
@@ -30,7 +31,7 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
-
+app.options("*", cors());
 
 app.use(express.json());
 
