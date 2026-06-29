@@ -12,8 +12,8 @@ const PORT = process.env.PORT || 3000;
 // Configuration
 // =========================================
 
-const WEBENGAGE_API = process.env.WEBENGAGE_API || "https://api.webengage.com/v2/accounts/76aba26/experiments/~24clqpf/transaction";
-const WEBENGAGE_API_KEY = process.env.WEBENGAGE_API_KEY || "493b6ba5-4a77-467e-addc-b5123e423702";
+const WEBENGAGE_API = process.env.WEBENGAGE_API;
+const WEBENGAGE_API_KEY = process.env.WEBENGAGE_API_KEY;
 
 const OTP_EXPIRY_MS = 5 * 60 * 1000;
 const RESEND_COOLDOWN_MS = 30 * 1000;
