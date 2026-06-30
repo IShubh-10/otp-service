@@ -445,7 +445,7 @@ setInterval(async () => {
             DELETE FROM otp_store
             WHERE expires_at < ?
             `,
-            [Date.now()]
+            [new Date()]
         );
 
         if (result.affectedRows > 0) {
